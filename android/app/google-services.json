@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "629053638876",
+    "project_id": "healthy-bites1",
+    "storage_bucket": "healthy-bites1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629053638876:android:9c3618a230f864763c0c19",
+        "android_client_info": {
+          "package_name": "com.example.healthy_bites"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAqWYGMYSuULgmrqxfw78ZjUc0QvU0PeE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
