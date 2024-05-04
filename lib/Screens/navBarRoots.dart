@@ -71,9 +71,15 @@ class _NavBarRootsState extends State<NavBarRoots> {
                   ),
                   label: "Add Meal"),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.person_3_outlined), label: "Profile"),
+                  icon: Icon(
+                    Icons.person_3_outlined,
+                  ),
+                  label: "Profile"),
               BottomNavigationBarItem(
-                  icon: Icon(CupertinoIcons.settings), label: "Settings"),
+                  icon: Icon(
+                    CupertinoIcons.settings,
+                  ),
+                  label: "Settings"),
             ],
           ),
         ),

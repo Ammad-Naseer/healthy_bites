@@ -2,8 +2,8 @@
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:healthy_bites/utils/toast.dart';
 import 'package:lottie/lottie.dart';
 import 'package:healthy_bites/Models/colors.dart';
 import 'package:healthy_bites/Screens/Login_Screen.dart';
@@ -31,14 +31,7 @@ class _SignUPScreenState extends State<SignUPScreen> {
           .createUserWithEmailAndPassword(
               email: emailController.text, password: passwordController.text)
           .then((_) {
-        Fluttertoast.showToast(
-          msg: "Registration successfully,Please Login",
-          toastLength: Toast.LENGTH_SHORT,
-          gravity: ToastGravity.BOTTOM,
-          timeInSecForIosWeb: 1,
-          backgroundColor: MyColors.darkGreen,
-          textColor: Colors.white,
-        );
+        Utils().toastMessage("Registration successfully,Please Login");
         Navigator.pushReplacement(
             context,
             MaterialPageRoute(
@@ -52,28 +45,12 @@ class _SignUPScreenState extends State<SignUPScreen> {
       } else {
         errorMessage = "An error occurred, please try again later";
       }
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          backgroundColor: MyColors.darkGreen,
-          content: Text(
-            errorMessage,
-            style: const TextStyle(fontSize: 18.0),
-          ),
-        ),
-      );
+      Utils().toastMessage(errorMessage);
     } catch (e) {
       if (kDebugMode) {
         print("Unexpected error: $e");
       }
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          backgroundColor: MyColors.darkGreen,
-          content: Text(
-            "An unexpected error occurred, please try again later",
-            style: TextStyle(fontSize: 18.0),
-          ),
-        ),
-      );
+      Utils().toastMessage("An error occurred, please try again later");
     }
   }
 
@@ -195,9 +172,7 @@ class _SignUPScreenState extends State<SignUPScreen> {
                                   'myName', nameController.text.toString());
                               registration();
                             } else {
-                              Fluttertoast.showToast(
-                                  msg: "Please fill all detail",
-                                  backgroundColor: Colors.redAccent);
+                              Utils().toastMessage("Please fill all details");
                             }
                           },
                           child: Text(

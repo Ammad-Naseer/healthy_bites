@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, use_build_context_synchronously
+// ignore_for_file: file_names, use_build_context_synchronously, deprecated_member_use
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -27,12 +27,61 @@ class _ProfileScreenState extends State<ProfileScreen>
   final emailController = TextEditingController();
   final newPasswordController = TextEditingController();
 
+  logoutConfirmationDialogBox() {
+    return showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          elevation: 10,
+          backgroundColor: Theme.of(context).brightness == Brightness.light
+              ? Colors.green.shade50
+              : Colors.black,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+          ),
+          title: Text(
+            "Logout Confirmation",
+            style: GoogleFonts.mukta(
+              textStyle: TextStyle(
+                color: Theme.of(context).brightness == Brightness.light
+                    ? MyColors.darkGreen
+                    : Colors.black,
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          content: const Text(
+            "Are you sure you want to logout?",
+            style: TextStyle(
+              fontSize: 16,
+            ),
+          ),
+          actions: <Widget>[
+            TextButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: const Text("Cancel"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                signOutUser();
+              },
+              child: const Text("Logout"),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
   void signOutUser() async {
     FirebaseAuth auth = FirebaseAuth.instance;
     User? currentUser = auth.currentUser;
     if (currentUser != null) {
       try {
-        await currentUser.delete().then((value) => Navigator.push(
+        await auth.signOut().then((value) => Navigator.push(
             context,
             MaterialPageRoute(
               builder: (context) => const LoginScreen(),
@@ -229,7 +278,7 @@ class _ProfileScreenState extends State<ProfileScreen>
                     child: drawerText(
                         "Information", Icons.perm_device_information)),
                 InkWell(
-                    onTap: () => signOutUser(),
+                    onTap: () => logoutConfirmationDialogBox(),
                     child: drawerText("Sign Out", Icons.logout_rounded)),
               ],
             )
@@ -310,7 +359,7 @@ class _ProfileScreenState extends State<ProfileScreen>
                   children: [
                     ClipOval(
                         child: Image.asset(
-                      "assets/hypeteq.jfif",
+                      "assets/ammad.png",
                       height: 60,
                       width: 70,
                     )),

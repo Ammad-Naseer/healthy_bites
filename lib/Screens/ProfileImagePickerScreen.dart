@@ -62,12 +62,11 @@ class _ProfileImagePickerScreenState extends State<ProfileImagePickerScreen> {
                         children: [
                           ElevatedButton.icon(
                             style: ElevatedButton.styleFrom(
-                              elevation: 0,
-                              primary: Theme.of(context).brightness ==
+                              foregroundColor: Colors.white, elevation: 0,
+                              backgroundColor: Theme.of(context).brightness ==
                                       Brightness.light
                                   ? Colors.green.shade200
-                                  : Colors.white60, // Background color
-                              onPrimary: Colors.white, // Text color
+                                  : Colors.white60, // Text color
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 16,
                                   vertical: 10), // Button padding
@@ -84,12 +83,12 @@ class _ProfileImagePickerScreenState extends State<ProfileImagePickerScreen> {
                           ),
                           ElevatedButton.icon(
                             style: ElevatedButton.styleFrom(
+                              foregroundColor: Colors.white,
                               elevation: 0,
-                              primary: Theme.of(context).brightness ==
+                              backgroundColor: Theme.of(context).brightness ==
                                       Brightness.light
                                   ? Colors.green.shade200
-                                  : Colors.white60, // Background color
-                              onPrimary: Colors.white, // Text color
+                                  : Colors.white60, // Text color
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 16,
                                   vertical: 10), // Button padding
@@ -173,7 +172,7 @@ class _ProfileImagePickerScreenState extends State<ProfileImagePickerScreen> {
                           Radius.circular(30),
                         ),
                         child: Image.asset(
-                          "assets/pretty.jpg",
+                          "assets/ammad.png",
                           width: 80,
                           height: 80,
                           fit: BoxFit.cover,

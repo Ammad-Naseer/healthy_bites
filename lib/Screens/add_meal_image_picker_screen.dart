@@ -60,12 +60,12 @@ class _ImagePickerScreenState extends State<ImagePickerScreen> {
                         children: [
                           ElevatedButton.icon(
                             style: ElevatedButton.styleFrom(
+                              foregroundColor: Colors.white,
                               elevation: 0,
-                              primary: Theme.of(context).brightness ==
+                              backgroundColor: Theme.of(context).brightness ==
                                       Brightness.light
                                   ? Colors.green.shade200
-                                  : Colors.black26, // Background color
-                              onPrimary: Colors.white, // Text color
+                                  : Colors.black26, // Text color
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 16,
                                   vertical: 10), // Button padding
@@ -82,12 +82,12 @@ class _ImagePickerScreenState extends State<ImagePickerScreen> {
                           ),
                           ElevatedButton.icon(
                             style: ElevatedButton.styleFrom(
+                              foregroundColor: Colors.white,
                               elevation: 0,
-                              primary: Theme.of(context).brightness ==
+                              backgroundColor: Theme.of(context).brightness ==
                                       Brightness.light
                                   ? Colors.green.shade200
-                                  : Colors.black26, // Background color
-                              onPrimary: Colors.white, // Text color
+                                  : Colors.black26, // Text color
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 16,
                                   vertical: 10), // Button padding

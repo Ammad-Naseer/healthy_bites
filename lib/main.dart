@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:healthy_bites/Provider/match_data_provider.dart';
 import 'package:healthy_bites/Provider/login_sharedpreference_provider.dart';
 import 'package:healthy_bites/Provider/theme_changer_provider.dart';
-import 'package:healthy_bites/Screens/Login_Screen.dart';
+import 'package:healthy_bites/Screens/auth.dart';
 import 'package:healthy_bites/Screens/on_boarding_screen.dart';
+import 'package:healthy_bites/firebase_options.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/foundation.dart';
 
@@ -27,7 +28,9 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final Future<FirebaseApp> _initialization = Firebase.initializeApp();
+  final Future<FirebaseApp> _initialization = Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   bool isLogin = false;
 
   @override
@@ -62,7 +65,7 @@ class _MyAppState extends State<MyApp> {
                   brightness: Brightness.dark,
                 ),
                 home: provider.getBoolLogin == true
-                    ? const LoginScreen()
+                    ? const LandingPage()
                     : const On_Boarding_screen(),
               );
             });
