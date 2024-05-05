@@ -62,13 +62,14 @@ For questions or inquiries about Healthy Bites, please contact Ammad Naseer at <
 ## Screenshots
 
 Boarding Screens:
-[screenshots/1b.png] [screenshots/2b.png] [screenshots/3b.png]
+Boarding Screens:
+![Boarding Screen 1](screenshots/1b.png) ![Boarding Screen 2](screenshots/2b.png) ![Boarding Screen 3](screenshots/3b.png)
 
-Login Screen:     Signup Screen:
-[screenshots/login.png] [screenshots/signup.png]
+Login Screen:         Signup Screen:
+![Login Screen](screenshots/login.png) ![Signup Screen](screenshots/signup.png)
 
 Home Screen:          Meal Plan Screen:
-[screenshots/home.png]     [screenshots/maelplanner.png]
+![Home Screen](screenshots/home.png)     ![Meal Plan Screen](screenshots/mealplanner.png)
 
 Add Meal Screen:      Profile Screen:     Settings Screen:
-[screenshots/addmeal.png] [screenshots/profile.png] [screenshots/setting.png]
+![Add Meal Screen](screenshots/addmeal.png) ![Profile Screen](screenshots/profile.png) ![Settings Screen](screenshots/setting.png)
