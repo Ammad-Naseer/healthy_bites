@@ -4,7 +4,7 @@ Welcome to Healthy Bites, a mobile app designed to provide customized meal plann
 
 ## Overview
 
-Healthy Bites is a Flutter-based mobile app developed to offer personalized meal planning services to users. The app aims to make healthy eating effortless and enjoyable by providing users with customized meal plans and access to a library of nutritious recipes. 
+Healthy Bites is a Flutter-based mobile app developed to offer personalized meal planning services to users. The app aims to make healthy eating effortless and enjoyable by providing users with customized meal plans and access to a library of nutritious recipes.
 
 ## Features
 
@@ -18,21 +18,25 @@ Healthy Bites is a Flutter-based mobile app developed to offer personalized meal
 To run the app locally, follow these steps:
 
 1. Clone the repository to your local machine:
+
    ```
    git clone https://github.com/Ammad-Naseer/healthy_bites.git
    ```
 
 2. Navigate to the project directory:
+
    ```
    cd healthy_bites
    ```
 
 3. Install dependencies using Flutter:
+
    ```
    flutter pub get
    ```
 
 4. Run the app on a simulator or physical device:
+
    ```
    flutter run
    ```
@@ -53,4 +57,18 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For questions or inquiries about Healthy Bites, please contact Ammad Naseer at ammad.naseer33@gmail.com.
+For questions or inquiries about Healthy Bites, please contact Ammad Naseer at <ammad.naseer33@gmail.com>.
+
+## Screenshots
+
+Boarding Screens:
+[screenshots/1b.png] [screenshots/2b.png] [screenshots/3b.png]
+
+Login Screen:     Signup Screen:
+[screenshots/login.png] [screenshots/signup.png]
+
+Home Screen:          Meal Plan Screen:
+[screenshots/home.png]     [screenshots/maelplanner.png]
+
+Add Meal Screen:      Profile Screen:     Settings Screen:
+[screenshots/addmeal.png] [screenshots/profile.png] [screenshots/setting.png]

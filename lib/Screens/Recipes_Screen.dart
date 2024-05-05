@@ -11,6 +11,7 @@ import 'package:lottie/lottie.dart';
 import 'package:healthy_bites/Provider/match_data_provider.dart';
 import 'package:healthy_bites/Screens/add_meal_screen.dart';
 import 'package:provider/provider.dart';
+import 'package:table_calendar/table_calendar.dart';
 
 import '../Models/colors.dart';
 
@@ -181,7 +182,7 @@ class _RecipeScreenState extends State<RecipeScreen>
                     const SizedBox(
                       height: 10,
                     ),
-                    /*Padding(
+                    Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 10.0),
                       child: Container(
                         padding: const EdgeInsets.symmetric(horizontal: 10.0),
@@ -193,7 +194,8 @@ class _RecipeScreenState extends State<RecipeScreen>
                             borderRadius: BorderRadius.circular(20)),
                         child: TableCalendar(
                           firstDay: DateTime.now(),
-                          lastDay: DateTime(2024),
+                          lastDay:
+                              DateTime.now().add(const Duration(days: 365)),
                           focusedDay: _focusDay,
                           availableCalendarFormats: const {
                             CalendarFormat.week: 'Week',
@@ -215,11 +217,14 @@ class _RecipeScreenState extends State<RecipeScreen>
                                     : Colors.white,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 18),
-                            // leftChevronIcon: Container(
-                            //   padding: EdgeInsets.all(4),
-                            //     decoration: BoxDecoration(color: Colors.amber,shape: BoxShape.circle),
-                            //     child: Icon(Icons.arrow_back)), // Customize the previous button
-                            // rightChevronIcon: Icon(Icons.arrow_forward),
+                            leftChevronIcon: Container(
+                                padding: const EdgeInsets.all(4),
+                                decoration: const BoxDecoration(
+                                    color: Colors.amber,
+                                    shape: BoxShape.circle),
+                                child: const Icon(Icons
+                                    .arrow_back)), // Customize the previous button
+                            rightChevronIcon: const Icon(Icons.arrow_forward),
                           ),
                           calendarBuilders: CalendarBuilders(
                               dowBuilder: (context, dayOfWeek) {
@@ -273,7 +278,7 @@ class _RecipeScreenState extends State<RecipeScreen>
                               outsideDaysVisible: false),
                         ),
                       ),
-                    ),*/
+                    ),
                     Consumer<Matchdate>(
                       builder: (context, md, _) {
                         List<DocumentSnapshot<Map<String, dynamic>>> meals =

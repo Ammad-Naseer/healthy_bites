@@ -38,8 +38,8 @@ class _HomeScreenState extends State<HomeScreen>
 
   @override
   void dispose() {
-    super.dispose();
     _controller.dispose();
+    super.dispose();
   }
 
   void getValue() async {
