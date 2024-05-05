@@ -61,15 +61,18 @@ For questions or inquiries about Healthy Bites, please contact Ammad Naseer at <
 
 ## Screenshots
 
-Boarding Screens:
-Boarding Screens:
-![Boarding Screen 1](screenshots/1b.png) ![Boarding Screen 2](screenshots/2b.png) ![Boarding Screen 3](screenshots/3b.png)
+| ![Boarding Screen 1](screenshots/1b.png) | ![Boarding Screen 2](screenshots/2b.png) | ![Boarding Screen 3](screenshots/3b.png) |
+| :--------------------------------------: | :--------------------------------------: | :--------------------------------------: |
+| *Boarding Screen 1* | *Boarding Screen 2* | *Boarding Screen 3* |
 
-Login Screen:         Signup Screen:
-![Login Screen](screenshots/login.png) ![Signup Screen](screenshots/signup.png)
+| ![Login Screen](screenshots/login.png) | ![Signup Screen](screenshots/signup.png) |
+| :------------------------------------: | :---------------------------------------: |
+| *Login Screen* | *Signup Screen* |
 
-Home Screen:          Meal Plan Screen:
-![Home Screen](screenshots/home.png)     ![Meal Plan Screen](screenshots/mealplanner.png)
+| ![Home Screen](screenshots/home.png) | ![Meal Plan Screen](screenshots/maelplanner.png) |
+| :-----------------------------------: | :---------------------------------------------: |
+| *Home Screen* | *Meal Plan Screen* |
 
-Add Meal Screen:      Profile Screen:     Settings Screen:
-![Add Meal Screen](screenshots/addmeal.png) ![Profile Screen](screenshots/profile.png) ![Settings Screen](screenshots/setting.png)
+| ![Add Meal Screen](screenshots/addmeal.png) | ![Profile Screen](screenshots/profile.png) | ![Settings Screen](screenshots/setting.png) |
+| :----------------------------------------: | :-----------------------------------------: | :-----------------------------------------: |
+| *Add Meal Screen* | *Profile Screen* | *Settings Screen* |
